@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Price calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	
+  	<link rel="stylesheet" href="css/style-price-calculator.css">
+
+</head>
+<body>
+
+<div class="container">
+	<div class="row page_wrap">
+		<div class="col-md-6 form_wrap">
+			<form action="/" class="price_calculator">
+
+				<!-- First parameter -->
+				
+				<div class="type-site">
+					<h4>First parameter</h4>
+					<div class="form-group">
+						<input type="radio" name="website" id="landing" class="radio_style" data-price="800" checked> 
+						<label for="landing">
+							First option
+						</label>    
+					</div>
+					<div class="form-group">
+						<input type="radio" name="website" id="business_card" class="radio_style" data-price="1000" >
+						<label for="business_card">
+							Second option
+						</label>  
+					</div>
+					<div class="form-group">
+						<input type="radio" name="website" id="store" class="radio_style" data-price="3000">
+						<label for="store">
+							Third option
+						</label>    
+					</div>
+
+				</div>
+
+				<!-- Second parameter -->
+
+				<div class="template">
+					<h4>Second parameter</h4>
+					<div class="form-group">
+						<input type="radio" name="design" id="ready_template" class="radio_style" data-price="200" checked> 
+						<label for="ready_template">
+							First option
+						</label>    
+					</div>
+					<div class="form-group">
+						<input type="radio" name="design" id="your_template" class="radio_style" data-price="600">
+						<label for="your_template">
+							Second option
+						</label>    
+					</div>
+				</div>
+
+				<!-- Additional options -->
+
+				<div class="additionally">
+					<h4>Additional options</h4>
+					<div class="checkbox">
+						<input type="checkbox" id="adaptive" class="checkbox_style" data-price="600"> 
+						<label for="adaptive">
+							First option
+						</label>    
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="search" class="checkbox_style" data-price="300">
+						<label for="search">
+							Second option
+						</label>    
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="subscribe" class="checkbox_style" data-price="50"> 
+						<label for="subscribe">
+							Third option
+						</label>    
+					</div>					
+					<div class="checkbox">
+						<input type="checkbox" id="feedback" class="checkbox_style" data-price="400">
+						<label for="feedback">
+							Fourth option
+						</label>    
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="callback" class="checkbox_style" data-price="100"> 
+						<label for="callback">
+							Fifth option
+						</label>    
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="comments" class="checkbox_style" data-price="300">
+						<label for="comments">
+							Sixth option
+						</label>    
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="fotogallery" class="checkbox_style" data-price="400">
+						<label for="fotogallery">
+							Seventh option
+						</label>    
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="videogallery" class="checkbox_style" data-price="250">
+						<label for="videogallery">
+							Eighth option
+						</label>    
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="registration" class="checkbox_style" data-price="100">
+						<label for="registration">
+							Ninth option
+						</label>    
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="map" class="checkbox_style" data-price="300">
+						<label for="map">
+							Tenth option
+						</label>    
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="calculator" class="checkbox_style" data-price="150">
+						<label for="calculator">
+							Eleventh option
+						</label>    
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="social" class="checkbox_style" data-price="50">
+						<label for="social">
+							Twelfth option
+						</label>    
+					</div>
+				</div>
+			</form>			
+		</div>
+
+		<!-- Total -->
+
+		<div class="col-md-6 table_summ_wrap">
+			<table class="table_summ">
+				<caption>Total</caption>
+				<tbody>
+					<tr>
+						<td>First parameter</td>
+						<td class="site_type"><span>800</span></td>
+					</tr>
+					<tr>
+						<td>Second parameter</td>
+						<td class="design_summ"><span>200</span></td>
+					</tr>
+					<tr>
+						<td>Additional options</td>
+						<td class="additional"><span>0</span></td>
+					</tr>
+					<tr class="summ_style">
+						<td>Sum</td>
+						<td class="summ"><span>0</span> $</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/price-calculator.js?v=2"></script>
+
+</body>
+</html>

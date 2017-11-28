@@ -1,0 +1,209 @@
+
+
+/*price page style*/
+
+.page .page-wrap .content-wrapper {
+  padding-bottom: 30px;
+}
+.page_wrap {
+	background-color: rgb(51, 51, 51);
+}
+.form_wrap {
+	background-color: rgb(243, 243, 243);
+}
+.form-group {
+	margin-bottom: 5px;
+	line-height: 20px;
+}
+.checkbox {
+	line-height: 20px;
+}
+h4 	{
+	color: rgb(214, 80, 80);
+	margin-bottom: 15px;
+}
+
+/*radio style*/
+label {
+  cursor: pointer;
+   transition: 0.3s all ease;
+   -webkit-transition: 0.3s all ease;
+   outline: none;
+   padding-bottom: 2px;
+}
+label:hover {
+	color: rgb(118, 118, 118);
+	transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+}
+.radio_style {
+	opacity: 0;
+	outline: none;
+}
+.radio_style:not(checked) {
+	position: absolute;
+}
+.radio_style:not(checked) + label {
+	position: relative; /* будем позиционировать псевдочекбокс относительно label */
+	padding: 0 0 0 28px; /* оставляем слева от label место под псевдочекбокс */
+}
+.radio_style:not(checked) + label:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #CDD1DA;
+	border-radius: 50%;
+	background: #FFF;
+}
+.radio_style:not(checked) + label:after {
+	content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(51, 51, 51);
+    box-shadow: 0 1px 1px #fff;
+    opacity: 0;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+}
+.radio_style:checked + label:after {
+  opacity: 1;
+}
+.radio_style:focus + label:before {
+  /*box-shadow: 0 0 0 1px #d65050;*/
+  outline: none;
+}
+
+
+
+/*checkbox style*/
+
+
+
+.checkbox_style:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox_style:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 50px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox_style:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 40px;
+  height: 18px;
+  border-radius: 13px;
+  background: #CDD1DA;
+  box-shadow: 0 2px 3px rgba(0,0,0,.2);
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox_style:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox_style:checked + label:before {
+
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.checkbox_style:checked + label:after {
+  left: 22px; 
+  background: rgb(51, 51, 51);
+}
+/* Показываем получение фокуса. */
+.checkbox_style:focus + label:before {
+  /*box-shadow: 0 0 0 1px #fff;*/
+}
+
+
+
+/*Summ*/
+
+.table_summ_wrap {
+	overflow-x:auto;
+}
+
+.table_summ {
+	color: rgb(118, 118, 118);
+	margin-top: 20%;
+	font-weight: 600;
+	font-size: 16px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table caption {
+	color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-size: 32px;
+    margin-top: 0;
+}
+table caption::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50px;
+    height: 1px;
+    margin-left: -25px;
+    background-color: #d65050;
+}
+
+th, td {
+    text-align: left;
+    padding: 20px 55px;
+    border: none;
+}
+
+tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+
+.site_type,
+.design_summ,
+.additional,
+.summ {
+	color: #d65050;
+}
+
+td:nth-child(even) {
+	text-align: center;
+}
+
+.summ_style {
+	font-size: 18px;
+}
+.summ span {
+	padding: 0px 10px;
+}
+
+.price_text_wrap {
+  padding-top: 30px;
+}
